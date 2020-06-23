@@ -28,7 +28,7 @@ cities = []
 df2 = df.iloc[:4]
 
 for row in df2.itertuples():
-    new = City(row.Breitengrad, row.Längengrad, row.Nummer, row.msg_Standort)
+    new = City(row.Längengrad, row.Breitengrad, row.Nummer, row.msg_Standort)
     cities.append(new)
 
 # # All Tours Algorithm
@@ -52,7 +52,7 @@ for tour in permutation:
     print (str(i)+". Tour:")
     tour = (cities[0], ) + tour
     entfernung = 0
-    for i in range(0, len(tour)-1):
+    for i in range(0, len(tour)):
     # wenn die letzte Stadt in der Liste erreicht ist, wird die Distanz zur Startstadt berechnet
         if i == len(tour)-1:
             entfernung += distanz(tour[i], tour[0])
