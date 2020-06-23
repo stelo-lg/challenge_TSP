@@ -6,7 +6,7 @@
 
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
+#import seaborn as sns
 import itertools
 from klassen import City, distanz
 
@@ -49,7 +49,7 @@ for row in df2.itertuples():
 
 
 #Bei der Permutation wird die erste Stadt ausgelassen, da dort immer gestartet wird
-permutation = list(itertools.permutations(cities[1:]))
+permutation = itertools.permutations(cities[1:])
 alltours = []
 #Vor und nach die Permutationen wird nun die Startstadt angefügt
 for tour in permutation:
@@ -85,16 +85,7 @@ for city in alltours[traveled.index(min(traveled))]:
 points = list(alltours[traveled.index(min(traveled))])
 points.append(cities[0])
 plt.plot([p.x for p in points], [p.y for p in points], "bo-")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
+plt.show()
 
 
 
