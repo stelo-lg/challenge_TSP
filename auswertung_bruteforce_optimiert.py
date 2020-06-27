@@ -25,9 +25,9 @@ cities = []
 
 # Permutation von 21 Städten ist schon nicht mehr möglich, da es einfach ewig dauert
 # daher wird das Skript an dieser Stelle nur mit weniger Datensätzen getestet
-df2 = df.iloc[:4]
+#df2 = df.iloc[:4]
 
-for row in df2.itertuples():
+for row in df.itertuples():
     new = City(row.Längengrad, row.Breitengrad, row.Nummer, row.msg_Standort)
     cities.append(new)
 
@@ -76,7 +76,7 @@ for city in optimum:
 
 
 plt.plot([p.x for p in optimum], [p.y for p in optimum], "bo-")
-plt.show()
+plt.savefig('optimum.png')
 
 
 
