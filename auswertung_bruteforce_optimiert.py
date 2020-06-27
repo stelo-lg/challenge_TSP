@@ -25,7 +25,7 @@ cities = []
 
 # Permutation von 21 Städten ist schon nicht mehr möglich, da es einfach ewig dauert
 # daher wird das Skript an dieser Stelle nur mit weniger Datensätzen getestet
-#df2 = df.iloc[:4]
+#df2 = df.iloc[:6]
 
 for row in df.itertuples():
     new = City(row.Längengrad, row.Breitengrad, row.Nummer, row.msg_Standort)
@@ -45,25 +45,25 @@ permutation = itertools.permutations(cities[1:])
 optimum = []
 #minimale Entfernung maximal groß setzen
 min_entfernung = float("inf")
-i = 0
+t = 0
 
 for tour in permutation:
-    i += 1
-    print (str(i)+". Tour:")
+    t += 1
+    print (str(t)+". Tour")
     tour = (cities[0], ) + tour
     entfernung = 0
-    for i in range(0, len(tour)):
-    # wenn die letzte Stadt in der Liste erreicht ist, wird die Distanz zur Startstadt berechnet
-        if i == len(tour)-1:
-            entfernung += distanz(tour[i], tour[0])
-        else:
-            entfernung += distanz(tour[i], tour[i+1])
-    #wenn eine neue minimale Entfernung gefunden wurde, wird dieser gespeichert
-    print (str(round(entfernung, 2)))
-    if entfernung < min_entfernung:
-        print("Neues Optimum gefunden.")
-        min_entfernung = entfernung
-        optimum = list(tour)
+    while (entfernung < min_entfernung):
+        for i in range(0, len(tour)):
+        # wenn die letzte Stadt in der Liste erreicht ist, wird die Distanz zur Startstadt berechnet
+            if i == len(tour)-1:
+                entfernung += distanz(tour[i], tour[0])
+            else:
+                entfernung += distanz(tour[i], tour[i+1])
+        #wenn eine neue minimale Entfernung gefunden wurde, wird dieser gespeichert
+        if entfernung < min_entfernung:
+            print("Neues Optimum gefunden.")
+            min_entfernung = entfernung
+            optimum = list(tour)
 
 print ("#########################################")
 print ("Die kürzste Wegstrecke: " + str(min_entfernung))
