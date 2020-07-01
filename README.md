@@ -2,8 +2,7 @@
 by get_in_it.de 
 
 Für die Lösung des Problems wurde der Nearest Neighbour Algorithm gewählt. Die Brute Force Methode, welche definitiv den kürzesten Weg berechnen würde, dauert bei 21 Standorten
-zu lang und ist zu rechenintensiv. Daher habe ich nach einem Algorithmus gesucht, mit dem ich eine möglichst gute Annäherung an die perfekte Lösung finde, aber der Algorithmus trotzdem 
-noch relativ einfach und leicht verständlich ist. 
+zu lang und ist zu rechenintensiv. Daher habe ich nach einem Algorithmus gesucht, mit dem ich eine möglichst gute Annäherung an die perfekte Lösung finde, aber der Algorithmus trotzdem noch relativ einfach und leicht verständlich ist. Andere Algorithmen, wie zum Beispiel das Erstellen eines Minimum Spanning Tree konnten bei der Konstalation der Städte nicht so ein zufriedenstellendes Ergebnisse erzielen wie die Nearest Neighbour Methode. 
 
 Um das Skript auszuführen, müssen die drei Dateien heruntergeladen werden: 
 * auswertung_nn.ipnyb
