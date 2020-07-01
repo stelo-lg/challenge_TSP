@@ -43,3 +43,5 @@ Das optimale Tour, welche berechnet wurde, lautet:
 * Ismaning/München (Hauptsitz)
 
 mit einer insgesamt zurückgelegten Strecke von: **2743.83 Kilometer**
+
+![alt text](optimum.png "Optimale Tour")
