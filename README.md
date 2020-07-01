@@ -1,8 +1,11 @@
-# Coding Challenge Traveling Salesperson Problem
-by get_in_it.de 
+# Coding Challenge Traveling: Salesperson Problem
+## by get_in_it.de 
 
-Für die Lösung des Problems wurde der Nearest Neighbour Algorithm gewählt. Die Brute Force Methode, welche definitiv den kürzesten Weg berechnen würde, dauert bei 21 Standorten
-zu lang und ist zu rechenintensiv. Daher habe ich nach einem Algorithmus gesucht, mit dem ich eine möglichst gute Annäherung an die perfekte Lösung finde, aber der Algorithmus trotzdem noch relativ einfach und leicht verständlich ist. Andere Algorithmen, wie zum Beispiel das Erstellen eines Minimum Spanning Tree konnten bei der Konstalation der Städte nicht so ein zufriedenstellendes Ergebnisse erzielen wie die Nearest Neighbour Methode. 
+Für die Lösung des Problems wurde der *Nearest Neighbour Algorithm* gewählt. 
+Die *Brute Force* Methode, wwürde zwar defintiv die exakte und kürzeste Lösung ermitteln, dauert bei 21 Standorten aber
+zu lang und ist zu rechenintensiv. Daher habe ich nach einem Algorithmus gesucht, mit dem ich eine möglichst gute Annäherung an die perfekte Lösung finde, aber der Algorithmus trotzdem noch relativ einfach und leicht verständlich ist. Andere Algorithmen, wie zum Beispiel das Erstellen eines *Minimum Spanning Tree* konnten außerdem bei der Konstellation der Städte nicht so ein zufriedenstellendes Ergebnisse erzielen wie die Nearest Neighbour Methode. 
+
+---
 
 Um das Skript auszuführen, müssen die drei Dateien heruntergeladen werden: 
 * auswertung_nn.ipnyb
@@ -10,6 +13,9 @@ Um das Skript auszuführen, müssen die drei Dateien heruntergeladen werden:
 * msg_standorte_deutschland.csv
 
 Anschließend kann einfach das Jupyter Notebook (asuwertung_nn.ipnyb) ausgeführt werden (z.B. in Jupyter Lab, VS Code, ...).
+
+---
+
 
 Das optimale Tour, welche berechnet wurde, lautet: 
 
@@ -36,4 +42,4 @@ Das optimale Tour, welche berechnet wurde, lautet:
 * St. Georgen
 * Ismaning/München (Hauptsitz)
 
-mit einer insgesamt zurückgelegten Strecke von: 2743.83 Kilometer
+mit einer insgesamt zurückgelegten Strecke von: **2743.83 Kilometer**
