@@ -1,5 +1,5 @@
 # Coding Challenge Traveling: Salesperson Problem
-## by get_in_it.de 
+## by get-in-it.de 
 
 Für die Lösung des Problems wurde der *Nearest Neighbour Algorithm* gewählt. 
 Die *Brute Force* Methode, wwürde zwar defintiv die exakte und kürzeste Lösung ermitteln, dauert bei 21 Standorten aber
